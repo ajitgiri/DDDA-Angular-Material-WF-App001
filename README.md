@@ -40,3 +40,16 @@ ng g c component/textdecoration [text Decoration by using : typography]
 
 ng g c component/matbuttons   
 ng g c component/matButtontogle
+
+
+<<<<<<<<  PUSH the Project to Git Hub  >>>>>>>>>
+Create the project in GitHub, without Create and initialize README file
+	Go to the project root folder and Right Clik and open: Git Bash here
+		<- git init
+		<- git remote add origin https://github.com/ajitgiri/DDDA-Angular-Material-WF-App001.git
+		<- git remote -v :To check the permisions like (fetch/push)
+		<- git add . : To add all the files to the index to pushed them to remore repository
+		<- git commit -m "This is my initial Push to Repository"
+		<- git push origin master 
+<<<<<<<<  END			>>>>> >>>
+
