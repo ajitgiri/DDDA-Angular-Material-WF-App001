@@ -1,0 +1,78 @@
+<div>
+    <b> mat-list </b> is a container component that wraps and formats a series of line items.<br>
+     As the base list component, it provides Material Design styling, but no behavior of its own.. <br>
+     mat-list element contains a number of mat-list-item elements <br>
+     Use mat-nav-list tags for navigation lists (i.e. lists that have anchor tags).<br>
+     Use the mat-action-list element when each item in the list performs some action. Each item in an action list is a button element.<br>
+     mat-list-option : A selection list provides an interface for selecting values, where each list item is an option.<br>
+     mat-divider : is used fro the partion in between the list
+</div>
+<p>
+   Step 1 : Need to add <b> MatListModule </b> in the materila.module.ts file <br>
+   Step 2 : Craete a Componet to experiment the Layout List of Components <br>
+   Step 3 : add the rounting details in <b> app.component.ts & app-routing.ts files</b><br>
+   Step 4 :  
+</p> 
+Test 0:
+<mat-list> 
+    <mat-list-item>Item I</mat-list-item>
+    <mat-list-item>Item II</mat-list-item>
+    <mat-list-item>Item III</mat-list-item> 
+</mat-list>
+
+<mat-list dense> 
+    <mat-list-item>Item I</mat-list-item>
+    <mat-list-item>Item II</mat-list-item>
+    <mat-list-item>Item III</mat-list-item> 
+</mat-list>
+
+Test 1: 
+<mat-list>
+    <h3 mat-subheader>Folders</h3>
+    <mat-list-item *ngFor="let folder of folders">
+      <mat-icon mat-list-icon>folder</mat-icon>
+      <h4 mat-line>{{folder.name}}</h4>
+      <p mat-line> {{folder.updated | date}} </p>
+    </mat-list-item>
+    <mat-divider></mat-divider>
+    <h3 mat-subheader>Notes</h3>
+    <mat-list-item *ngFor="let note of notes">
+      <mat-icon mat-list-icon>note</mat-icon>
+      <h4 mat-line>{{note.name}}</h4>
+      <p mat-line> {{note.updated | date}} </p>
+    </mat-list-item>
+  </mat-list>
+
+Test 2:
+  <mat-selection-list #shoes>
+    <mat-list-option *ngFor="let shoe of typesOfShoes">
+      {{shoe}}
+    </mat-list-option>
+  </mat-selection-list>
+  
+  <p>
+    Options selected: {{shoes.selectedOptions.selected.length}}
+  </p>
+
+Test 3:mat-icon inside mat-list
+<mat-list>
+    <mat-list-item  >
+      <mat-icon matListIcon>home</mat-icon>
+      <h3 matLine> Home  </h3>
+      <p matLine> Setup  </p>
+    </mat-list-item>
+</mat-list>
+
+<mat-list>
+    <mat-list-item  >
+      <mat-icon matListIcon>folder</mat-icon>
+      <h3 matLine> Home  </h3>
+      <p matLine> Setup  </p>
+    </mat-list-item>
+  </mat-list>
+
+  Test 4: mat-nav-list Tag:
+   <mat-nav-list>
+       <a mat-list-item href="#"> Home </a>
+       <a mat-list-item href="#"> Setup </a>
+  </mat-nav-list>

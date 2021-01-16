@@ -1,0 +1,40 @@
+<div>
+    <b> By default, mat-chip </b> has Material Design styles applied. For a chip with no styles applied,<br> 
+    <b> use mat-basic-chip </b> You can then customize the chip appearance by adding your own CSS.. 
+</div>
+<p>
+   Step 1 : Need to add <b>MatProgressBarModule </b> in the materila.module.ts file <br>
+   Step 2 : Craete a Componet to experiment the Material Progress Bar <br>
+   Step 3 : add the rounting details in <b> app.component.ts & app-routing.ts files</b><br>
+   Step 4 :  Progress mode : The progress-bar supports four <b>modes: determinate, indeterminate, buffer and query. </b><br>
+</p> 
+
+Test 1: Deafult One not allowed to apply CSS: 
+    <mat-chip-list>
+        <mat-chip>Papadum</mat-chip>
+        <mat-chip>Naan</mat-chip>
+        <mat-chip>Dal</mat-chip>
+    </mat-chip-list>
+Test 2: Deafult One not allowed to apply CSS:   
+    <mat-chip-list aria-label="Fish selection">
+        <mat-chip>One fish</mat-chip>
+        <mat-chip>Two fish</mat-chip>
+        <mat-chip color="primary" selected>Primary fish</mat-chip>
+        <mat-chip color="accent" selected>Accent fish</mat-chip>
+    </mat-chip-list>
+Test 3: Chip input : The MatChipInput directive can be used together with a chip-list to streamline the interaction between the two components.
+
+<mat-form-field class="example-chip-list" style="width: 400px;">
+    <mat-chip-list #chipList aria-label="Fruit selection">
+      <mat-chip *ngFor="let fruit of fruits" [selectable]="selectable"
+               [removable]="removable" (removed)="remove(fruit)">
+        {{fruit.name}}
+        <mat-icon matChipRemove *ngIf="removable">cancel</mat-icon>
+      </mat-chip>
+      <input placeholder="New fruit..."
+             [matChipInputFor]="chipList"
+             [matChipInputSeparatorKeyCodes]="separatorKeysCodes"
+             [matChipInputAddOnBlur]="addOnBlur"
+             (matChipInputTokenEnd)="add($event)">
+    </mat-chip-list>
+  </mat-form-field>

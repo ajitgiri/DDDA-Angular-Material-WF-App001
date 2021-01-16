@@ -1,0 +1,56 @@
+<div>
+    <b> mat-expansion-panel </b> provides an expandable details-summary view.<br>
+    Each expansion-panel must include a header and may optionally include an action bar.. <br>
+    The number of rows will be automatically determined based on the number of columns and the number of items.<br>
+    Header : mat-expansion-panel-header shows a summary of the panel content and acts as the control for expanding and collapsing<br>
+    &nbsp; This header may optionally contain an <b> mat-panel-title and an mat-panel-description </b> which format the content of the header to align with Material Design specifications.<br>
+    Action bar :  Actions may optionally be included at the bottom of the panel, visible only when the expansion is in its expanded state.<br>
+    Disabling a panel : Expansion panels can be disabled using the disabled attribute..<br>
+</div>
+<p>
+   Step 1 : Need to add <b> MatGridListModule </b> in the materila.module.ts file <br>
+   Step 2 : Craete a Componet to experiment the Grid  List Layout in the page <br>
+   Step 3 : add the rounting details in <b> app.component.ts & app-routing.ts files</b><br>
+   Step 4 :  
+</p> 
+<br>
+
+Test 1:
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title> Personal data </mat-panel-title>
+      <mat-panel-description> Type your name and age </mat-panel-description>
+    </mat-expansion-panel-header>
+    <p>This is the Personal Data With Age of the Employee</p>
+    <mat-action-row>
+      <button mat-button>Next</button>
+    </mat-action-row>
+  </mat-expansion-panel>
+
+<br>
+Test 2:
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Personal data
+      </mat-panel-title>
+      <mat-panel-description>
+        Type your name and age
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+  </mat-expansion-panel>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Personal data 2
+      </mat-panel-title>
+      <mat-panel-description>
+        Type your name and age 2
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <input type="text" name="name">
+  </mat-expansion-panel>
+  
+</mat-accordion>

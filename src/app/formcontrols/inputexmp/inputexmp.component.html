@@ -1,0 +1,107 @@
+<div class="bodyContent">
+<div>
+    <b> mat-menu</b> is a floating panel/Menubar containing list of options. <br>
+    <b>matInput</b> : control we can wrapp inside the formControl
+</div>
+<p>
+   Step 1 : Need to add <b> MatInputModule and MatFormFieldModule </b> in the materila.module.ts file <br>
+   Step 2 : Craete a Componet to experiment the Material Input Fields <br>
+   Step 3 : add the rounting details in <b> app.component.ts & app-routing.ts files</b><br>
+   Step 4 :  First name: <br>
+   Step 5 :  Last name: <br>
+   Step 6 :  Email : <br>
+   Step 7 :  Phone : <br>
+   Step 7 :  Address : <br>
+   floatLabel="never" ;  floatLabel="always" ; floatLabel="auto"
+</p> <br>
+
+
+ floatlabel &nbsp;&nbsp;: &nbsp;&nbsp;       
+<mat-form-field >
+  <mat-label>Last Name</mat-label>
+  <input matInput >
+</mat-form-field> &nbsp;&nbsp; : &nbsp;&nbsp;
+<mat-form-field floatLabel="never">
+  <mat-label>Last Name0</mat-label>
+  <input matInput >
+</mat-form-field>&nbsp;&nbsp; : &nbsp;&nbsp;
+<mat-form-field floatLabel="always">
+  <mat-label >Last Name1</mat-label>
+  <input matInput >
+</mat-form-field>&nbsp;&nbsp; : &nbsp;&nbsp;
+<mat-form-field floatLabel="auto">
+  <mat-label >Last Name2</mat-label>
+  <input matInput >
+</mat-form-field>&nbsp;&nbsp; : &nbsp;&nbsp;
+<mat-form-field >
+  <input matInput >
+</mat-form-field> <br>
+
+required &nbsp;&nbsp;:&nbsp;&nbsp;
+<mat-form-field >
+  <mat-label>Email</mat-label>
+  <input matInput required>
+</mat-form-field>&nbsp;&nbsp; : &nbsp;&nbsp;
+<mat-form-field hideRequiredMarker>
+  <mat-label>Email</mat-label>
+  <input matInput required>
+</mat-form-field>&nbsp;&nbsp; : &nbsp;&nbsp;
+<mat-form-field >
+  <input matInput >
+</mat-form-field>&nbsp;&nbsp; : &nbsp;&nbsp;
+<mat-form-field >
+  <input matInput >
+</mat-form-field>&nbsp;&nbsp; : &nbsp;&nbsp;
+<mat-form-field >
+  <input matInput >
+</mat-form-field> <br>
+
+mat-hint &nbsp;&nbsp;:&nbsp;&nbsp;
+<mat-form-field >
+  <mat-label>Email</mat-label>
+  <input matInput required>
+  <mat-hint>Mail should have max length 60, @</mat-hint>
+</mat-form-field>&nbsp;&nbsp; : &nbsp;&nbsp;
+<mat-form-field hideRequiredMarker>
+  <mat-label>Email</mat-label>
+  <input matInput required>
+  <mat-hint align="end">Mail can max length 60, @</mat-hint>
+</mat-form-field>&nbsp;&nbsp; : &nbsp;&nbsp;
+<mat-form-field  appearance="legacy">
+  <mat-label>Email</mat-label>
+  <input matInput >
+</mat-form-field>&nbsp;&nbsp; : &nbsp;&nbsp;
+<mat-form-field >
+  <mat-label>Email</mat-label>
+  <input matInput appearance="standard">
+</mat-form-field>&nbsp;&nbsp; : &nbsp;&nbsp;
+<mat-form-field >
+  <mat-label>Email</mat-label>
+  <input matInput appearance="standard"> 
+</mat-form-field>
+<br><br>
+
+appearance &nbsp;&nbsp; : &nbsp;&nbsp;
+<mat-form-field appearance="fill">
+  <input matInput >
+  <mat-hint> Max length 60, @</mat-hint>
+</mat-form-field> &nbsp;&nbsp; : &nbsp;&nbsp;
+<mat-form-field appearance="outline">
+  <mat-hint> Max length 80, @</mat-hint>
+  <input matInput >
+</mat-form-field> <br>
+
+<br><br>
+
+Color &nbsp;&nbsp; : &nbsp;&nbsp;
+<mat-form-field appearance="fill" color="accent">
+  <input matInput >
+  <mat-hint> Max length 60, @</mat-hint>
+</mat-form-field> &nbsp;&nbsp; : &nbsp;&nbsp;
+<mat-form-field appearance="outline" color="warn">
+  <mat-hint> Max length 80, @</mat-hint>
+  <input matInput >
+</mat-form-field> <br>
+
+</div>
+

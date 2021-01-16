@@ -1,0 +1,25 @@
+<div>
+    <b> mat-toolbar</b> is a container for headers, titles, or actions.. 
+</div>
+<p>
+   Step 1 : Need to add <b>MatProgressBarModule </b> in the materila.module.ts file <br>
+   Step 2 : Craete a Componet to experiment the Material Progress Bar <br>
+   Step 3 : add the rounting details in <b> app.component.ts & app-routing.ts files</b><br>
+   Step 4 :  Progress mode : The progress-bar supports four <b>modes: determinate, indeterminate, buffer and query. </b><br>
+</p> 
+
+Test 1:  <mat-toolbar>Home</mat-toolbar>
+Test 2: <mat-toolbar color="primary"> 
+            <span>Home</span> 
+        </mat-toolbar>
+Test 3:Converting Toolbar to Nave Bar Here:
+         <mat-toolbar color="primary" class="navebar"> 
+            <div>Angular Material</div> 
+            <div>
+                <span>Home</span>
+                <span>Contact Us</span>
+                <span>About Us</span>
+            </div>
+        </mat-toolbar>
+Test 3: Query: For situations where the user wants to indicate pre-loading (until the loading can actually be made), use the query indicator.
+<mat-progress-bar mode="query"></mat-progress-bar>

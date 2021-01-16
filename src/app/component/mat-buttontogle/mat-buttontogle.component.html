@@ -1,0 +1,30 @@
+<p>
+    Step 1 : Need to add <b>MatButtonToggleModule </b> in the materila.module.ts file <br>
+    Step 2 : Craete a Componet to experiment the Material Buttons <br>
+    Step 3 : add the rounting details in <b> app.component.ts & app-routing.ts files </b>
+    Step 4 : and can add the template reference variable to check the state of the button 
+</p> 
+<br>
+<mat-button-toggle  #toggleBtn>Toggle Me</mat-button-toggle> &nbsp; &nbsp;Toggle Value:  {{toggleBtn.checked}}<br><br>
+
+<mat-button-toggle  #toggleBtnChk checked>Toggle Me</mat-button-toggle> &nbsp; &nbsp;Toggle Value:  {{toggleBtnChk.checked}}<br><br>
+
+<mat-button-toggle  #toggleBtnChk disableRipple>Toggle Me</mat-button-toggle> &nbsp; &nbsp;disableRipple<br><br>
+
+<b> By default mat-button-toggle-group looks like like Radio buttion group </b><br>
+<mat-button-toggle-group name="fontStyle" aria-label="Font Style" #toggleBtnGroup ="matButtonToggleGroup">
+    <mat-button-toggle value="Angular">Angular</mat-button-toggle>
+    <mat-button-toggle value="React">React</mat-button-toggle> 
+    <mat-button-toggle value="Vu">Vu</mat-button-toggle>
+  </mat-button-toggle-group>
+
+  &nbsp; &nbsp; {{toggleBtnGroup.value}}
+
+  <br><b> By default mat-button-toggle-group looks like like Radio buttion group, So can select the Multiple Values by adding : multiple </b><br>
+<mat-button-toggle-group name="fontStyle" aria-label="Font Style" #toggleBtnGroup2 ="matButtonToggleGroup" multiple>
+    <mat-button-toggle value="Angular">Angular</mat-button-toggle>
+    <mat-button-toggle value="React">React</mat-button-toggle> 
+    <mat-button-toggle value="Vu">Vu</mat-button-toggle>
+  </mat-button-toggle-group>
+
+  &nbsp; &nbsp; {{toggleBtnGroup2.value}}

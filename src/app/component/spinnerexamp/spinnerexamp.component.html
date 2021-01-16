@@ -1,0 +1,18 @@
+<div>
+     <b> mat-progress-spinner and mat-spinner </b> are a circular indicators of progress and activity. 
+</div>
+<p>
+    Step 1 : Need to add <b>MatProgressSpinnerModule </b> in the materila.module.ts file <br>
+    Step 2 : Craete a Componet to experiment the Material Spinners <br>
+    Step 3 : add the rounting details in <b> app.component.ts & app-routing.ts files</b><br>
+    Step 4 : add the Spinners into the page <br>
+    Step 5 : <b > mat-spinner :</b> Never Stoping Spinner  &nbsp;|| &nbsp; <b>mat-progress-spinner: </b> Can add the conditions ects 
+</p> 
+
+Test 1:mat-spinner <mat-spinner color="accent"></mat-spinner> &nbsp;  
+Test 2:mat-progress-spinner  <mat-progress-spinner value='20'></mat-progress-spinner> &nbsp;
+Test 3:mat-progress-spinner  <mat-progress-spinner value='100'></mat-progress-spinner>
+Test 4:Using Spinner for 50 Seconds while loading Data from DB: 
+
+<mat-spinner *ngIf="showSpinner" color="warn"></mat-spinner>
+<button (click) ="loadData()">Load Data</button>

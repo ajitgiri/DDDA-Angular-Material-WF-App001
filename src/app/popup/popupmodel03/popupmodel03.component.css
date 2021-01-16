@@ -1,0 +1,5 @@
+div.mat-dialog-container{
+    max-width: 80px;
+    max-height: 100% !important;
+    resize: both;
+  }

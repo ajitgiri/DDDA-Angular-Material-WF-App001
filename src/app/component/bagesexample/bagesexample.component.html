@@ -1,0 +1,42 @@
+<div>
+    Badges are small status descriptors for UI elements. <b> matBadge="15" </b>
+    A badge consists of a small circle, typically containing a number or other short set of characters, 
+    that appears in proximity to another object.
+    Note: if want to show soem Warning or Info like no of mail / No of Order Items
+</div>
+<p>
+    Step 1 : Need to add <b>MatBadgeModule </b> in the materila.module.ts file <br>
+    Step 2 : Craete a Componet to experiment the Material Bages Class<br>
+    Step 3 : add the rounting details in <b> app.component.ts & app-routing.ts files</b><br>
+    Step 4 : add the Badges into the page <br>
+    Step 5 : <b color="primary"> matBadge="15" &nbsp;|| &nbsp; matBadgeOverlap &nbsp; || &nbsp; matBadgeColor 
+            &nbsp;||&nbsp; matBadgePosition  &nbsp;||&nbsp; matBadgeSize </b>
+</p> 
+
+
+<div>
+    <p>
+        <span [matBadge]="notification" [matBadgeHidden] ="notification === 0" matBadgeOverlap="false" matBadgeSize='large'>Binding Notifications from Properties in ts file </span>
+    </p>
+    <p>
+        <span matBadge="4" matBadgeOverlap="false" matBadgeSize='large'>Text with a badge</span>
+    </p>
+      
+      <p>
+        Button with a badge on the left
+        <button mat-raised-button color="primary"
+            matBadge="8" matBadgePosition="before" matBadgeColor="accent" matBadgeSize='small'>
+          Action
+        </button>
+      </p>
+      
+      <p>
+        Icon with a badge
+        <mat-icon matBadge="15" matBadgeColor="warn">home</mat-icon>
+          <!-- Include text description of the icon's meaning for screen-readers -->
+          <span class="cdk-visually-hidden">
+            Example with a home icon with overlaid badge showing the number 15
+          </span>
+      </p>
+      
+</div>
