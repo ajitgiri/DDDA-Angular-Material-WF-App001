@@ -20,6 +20,7 @@ import { MatBottomSheetModule} from '@angular/material/bottom-sheet';
 import { MatTabsModule} from '@angular/material/tabs';
 import { MatInputModule} from '@angular/material/input';
 import { MatDialogModule, MatDialogTitle, MatDialogActions, MatDialogContent, MatDialogClose } from '@angular/material/dialog';
+import { MatSidenavModule } from '@angular/material/sidenav';
 
 const materialImportExportComponents = [
   MatSliderModule,
@@ -42,7 +43,8 @@ const materialImportExportComponents = [
   MatBottomSheetModule,
   MatTabsModule,
   MatInputModule,
-  MatDialogModule
+  MatDialogModule,
+  MatSidenavModule
 ]
 
 @NgModule({

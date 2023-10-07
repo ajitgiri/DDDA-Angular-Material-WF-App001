@@ -89,7 +89,7 @@
 </div>
 
 <div class="content" role="main">
-  <button mat-button [matMenuTriggerFor]="formctrls" >Form Controls</button>
+<button mat-button [matMenuTriggerFor]="formctrls" >Form Controls</button>
 <button mat-button [matMenuTriggerFor]="navigationctrls" >Navigation</button>
 <button mat-button [matMenuTriggerFor]="layoutctrls" >Layout</button>
 <button mat-button [matMenuTriggerFor]="buttonsctrls" >Button</button>
@@ -191,9 +191,9 @@
 		  <button mat-menu-item  >Menu 3</button>
 		</mat-menu>
 		<mat-menu #sideNavCtrls="matMenu">
-		  <button mat-menu-item  >Side 1</button>
-		  <button mat-menu-item  >Side 2</button>
-		  <button mat-menu-item  >Side 3</button>
+		  <button mat-menu-item routerLink="sideNav1" >SideNavBer</button>
+		  <button mat-menu-item routerLink="sideNav2" >Side 2</button>
+		  <button mat-menu-item routerLink="sideNav3" >Side 3</button>
 		</mat-menu>
 		<mat-menu #toolbarCtrls="matMenu">
 		  <button mat-menu-item routerLink="toolbarExp" >Tool Bar</button>
